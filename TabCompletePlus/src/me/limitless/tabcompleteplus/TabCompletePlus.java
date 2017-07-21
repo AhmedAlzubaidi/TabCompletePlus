@@ -2,6 +2,7 @@ package me.limitless.tabcompleteplus;
 
 import java.util.ArrayList;
 
+import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class TabCompletePlus extends JavaPlugin
@@ -13,6 +14,8 @@ public class TabCompletePlus extends JavaPlugin
 	public void onEnable()
 	{
 		instance = this;
+		//TESTING
+		Bukkit.getConsoleSender().sendMessage("TabCompletePlus");
 	}
 	
 	public TabCompletePlus addCommand(CommandData command)
